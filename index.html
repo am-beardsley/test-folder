@@ -25,6 +25,17 @@ You should now have a separate browser window that shows you a preview of your w
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--Next is a link to the cascading style sheet or CSS. Web designers use CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. You'll find attributes relating font, text size, image size, among other details on the style.css page. Your webpage will not work without this.-->
 <link rel="stylesheet" type="text/css" href="style.css">
+<script>function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}</script>
+
+
+
 </head>
 <!--That concludes the important metadata that begins every HTML page. You can see where tags begin and end. Closing tags use a forward slash. So, <head> is an opening tag and </head> tells the browser where that information ends.-->
 
@@ -57,15 +68,7 @@ You should now have a separate browser window that shows you a preview of your w
     <i class="fa fa-bars"></i>
   </a>
 </div>
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+
 
 
 <!--Tip: Want to change the color of the <h1> text? You'll need to locate the information on the stylesheet. Find the code by looking for the class info (class="hero-text").-->

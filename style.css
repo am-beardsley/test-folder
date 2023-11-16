@@ -3,7 +3,11 @@ body, html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* Header */
 
+ #header nav ul li {
+ margin-left: 1em;
+        }
 #header nav {
     letter-spacing: 0.075em;
     position: absolute;

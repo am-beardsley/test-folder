@@ -25,6 +25,10 @@ You should now have a separate browser window that shows you a preview of your w
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--Next is a link to the cascading style sheet or CSS. Web designers use CSS to add styling to a website. Designers do this by "calling" a <div class> in HTML and defining the class attributes on the style sheet. Doing so saves time and results in less code. You'll find attributes relating font, text size, image size, among other details on the style.css page. Your webpage will not work without this.-->
 <link rel="stylesheet" type="text/css" href="style.css">
+
+<!--Javascript-->
+<!--Javscript controls "complex features" like hamburger menus. You must include this script in the
+  HTML file, or the menu won't work. I like to add the script in the <head> after my stylesheet so it's easy to find.-->
 <script>function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -43,26 +47,27 @@ You should now have a separate browser window that shows you a preview of your w
 <!--Now we will start working in the body of the document. The body holds all of the code and content that will appear as a visual for our audience. It's broken up into containers using the <div> tag to group content together.-->
 
 <!--Designers refer to this next section as a "Hero Image." The hero image is styled on the style.css page by calling a "class." Replace the hero image with one that you'd like to use. To replace the hero image, simply place a .jpg file in the same file folder (directory) as this project and name it "hero.jpg." Alternatively, if you are working with a .png, you will need to open the style.css file using your text editor, find the "hero-image" class and change the file type from ".jpg" to ".png."" Browsers will only work with .jpg, .jpeg, or .png images. Since hero images need to stretch across the screen, typically you will want to select an image 1200px in width to allow quick load time yet avoid pixilation.-->
+<!--nav-->
 
+<!-- Load an icon library to show a hamburger menu (bars) on small screens. Do not skip this! You will not have a hamburger menu without it. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#abstract">Abstract</a>
+  <a href="#philosophy">Accessibility &amp; Design Philosophy</a>
+  <a href="#references">References</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 <div class="hero-image">
   <div class="hero-text">
       <h1>Do <strong>you</strong> see what I see?</h1>
   </div>
 </div>
-<!--nav-->
 
-<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">About Me</a>
-  <a href="#contact">Design Philosophy</a>
-  <a href="#about">References</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
 
 <!--Tip: Want to change the color of the <h1> text? You'll need to locate the information on the stylesheet. Find the code by looking for the class info (class="hero-text").-->
 
